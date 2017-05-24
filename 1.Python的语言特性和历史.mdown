@@ -1,0 +1,155 @@
+1.Python的语言特性和历史
+=====
+python是一种高层次的,解释型的,交互式和面向对象的脚本语言.
+---
+-*Python是解释型的*
+-*Python是交互型的*
+-*Python是面向对象的*
+-*Python是初学者的语言*
+Python的突出特点
+---
+-*易学*
+-*易阅读*
+-*易维护*
+-*拥有广泛的标准库*
+-*交互模式*
+-*可移植*
+-*可拓展*
+-*数据库*
+-*GUI程序*
+-*可伸缩*
+
+第一个Python程序
+---
+交互式编程模式
+---
+调用解释不通过一个脚本文件作为参数
+
+Python的标识符
+---
+Python标识符是一个用来标识变量,函数,类,模块,或者其他对象的名称.标识符是以字母A到Z或者a到z开始后面跟0个或者多个字母下划线(__),下划线和数字
+Python不允许标点字符标识符,如@,$和%.Python是一种区分大小写的
+>下面是在Python标识符的命名约定
+    -类命名首字母为大写字母,其他的标识符以小写字母
+    -单个前导下划线开始的标识符表示该标识符意味着约定式私有的
+    -开始是两个前导下划线的标识符表示强烈专用标识符
+    -如果标识符还具有两个尾随下划线结束时,所述标识符是语言定义的特殊名称
+
+保留字
+---
+|and       |exec      |not
+|assert    |finally   |or
+|break     |for       |pass
+|class     |from      |print
+|continue  |global    |raise
+|def       |if        |return
+|del       |import    |try
+|elif      |in        |while
+|else      |is        |with
+|except    |lambda    |yield
+
+行和缩进
+===
+一个程序员在学习Python时,遇到的第一个事项是,Python中不使用括号来表示代码类函数定义块或流量控制.代码块由行缩进,这是严格执行.
+缩进位数量是可变的,但是在块中的所有语句必须缩进量相同.
+正确的例子
+```Python
+if True:
+    print "True"
+else:
+    print "False"
+```
+
+然而在这个例子中,第二个块将会产生一个错误
+```Python
+if True:
+    print "Answer"
+    print "True"
+else:
+    print "Answer"
+  Print "False"
+```
+
+
+多行语句
+===
+在python语句中通常有一个新行表示结束.Python里面,但是,允许使用连续字符( \ )表示该行应该继续.例如:
+```Python
+total = item_one + \
+        item_two + \
+        item_three
+```
+包含在语句[] {},或者()括号内不能使用续行字符.例如:
+```Python
+days = ['Monday','Tuesday','Wednesday',
+        'Thursday','Friday']
+```
+
+在Python中的引号
+===
+Python的接受单引号('),双引号(")和三引号(''')引用来表示字符串,只要是同一类型的引号的开始和结束的字符串.
+三重引号可以用来横跨多行字符串.例如,下面的所有表示都是合法的:
+```Python
+Word = 'word'
+sentence = "This is a sentence"
+paragraph = '''This is a paragraph. It is 
+made up of multiple lines and sentences'''
+```
+
+在Python中的注释
+===
+哈希符号(#)不是一个字符串的字母开头,他是一个注释的开始.#之后以及到物理行结束的所有字符都是注释的一部分,Python解释器会忽略他们.
+```Python
+#!/user/bin/python
+
+# First comment 
+print "Hello,Python!"; #second comment
+```
+这将产生以下结果:
+>Hello,Python!
+
+注释在一个语句或者一个表达式后的同一行
+
+可以多行注释
+
+使用空行
+===
+仅包含空格,可能带有注释行,被称为一个空行,Python完全忽略他
+在交互式解释器会话,必须输入一个空的物理线路终止多行语句.
+
+在一行上的多个语句 
+===
+分号(;允许在单一行上编写多条语句,语句开始一个新的代码块.下面是使用分号示例判断:
+>import sys; x = 'foo'; sys.stout.writes(x+'\n')
+
+多组语句成为套件
+===
+组成一个单一的代码块的个别语句组在Python中被称为套件.
+组件或复杂的语句,如if,while,def和类,是那些需要一个标题行和套件.
+标题行开始语句(用关键字),并终止并显示冒号(:),接着是一行或者多行,组成套件.
+标题行开始语句(用关键字) ,并终止并显示冒号(:),接着是一行或多行,组成套件.
+例子:
+```Python
+if expression:
+    suite
+elif expression:
+    suite
+else expression:
+    suite
+```
+
+Python-变量类型
+===
+变量是什么,不是保留在内存位置用来存储的一些值.这意味着,当创建一个变量,它会在内存中保存一些空间.根据一个变量的数据类型,解释器分配内存,并决定什么样的数据可以存储在保存存储器.因此,通过分配不同的数据类型的变量,可以存储整数,小数,或者字符在这些变量中
+
+给变量赋值
+===
+在=操作符的左侧是变量名,在=变量名的右边是存储在变量中的值.例如:
+```Python
+counter = 100 #An integer assignment
+miles = 1000.0 
+name = "Jhon"
+
+print counter
+print miles
+print name
