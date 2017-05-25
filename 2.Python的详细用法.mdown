@@ -1,0 +1,7 @@
+List用法
+===
+1.如果想要从后向前获取list中的list元素
+可以 list[-1]意思就是当前列表的最后一位元素
+
+2.如果要想list的末尾追加元素可以使用list.append();
+如果要向列表的任意位置追加元素使用insert(index,element)

@@ -182,3 +182,31 @@ print tuple[2:]
 print tinytuple*2
 print tuple+tinytuple
 ```
+
+if语句
+===
+```
+if expression:
+    statments(s)
+elif expression:
+    statments(s)
+else expression:
+    statments(s)
+```
+for循环
+===
+```
+for iterating_var in sequence:
+    statements(s)
+
+```
+
+注意:
+===
+Python把 0,空字符串,None看成false,其他数值和非空字符串看成True,所以:
+True and 'a=T' 计算结果还是'a = T'
+
+短路计算:
+1.在计算 a and b 时,如果a是false,则根据与运算法则,整个结果必定为false,因此返回a;如果a是True,则整个计算结果必定取决于b,因此返回b
+Python解释器在做布尔运算时,只要能提前确定计算结果,它就不会往后计算了,直接返回结果
+
